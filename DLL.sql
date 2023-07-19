@@ -43,3 +43,11 @@ ALTER TABLE tab_cliente ADD s_sexo_cliente CHAR(1);
 ALTER TABLE tab_cliente ADD s_teste CHAR(1);
 --Excluir coluna
 ALTER TABLE tab_cliente DROP COLUMN s_teste;
+
+ALTER TABLE tab_cliente ADD i_tipo_cliente INT ;
+
+-- Alterar tipo de dado
+ALTER TABLE tab_cliente ADD i_idade_cliente INT;
+ALTER TABLE tab_cliente ALTER COLUMN i_idade_cliente TINYINT;
+
+
